@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vscode-bg: #1e1e1e;
+  --vscode-sidebar: #252526;
+  --vscode-active-tab: #1e1e1e;
+  --vscode-inactive-tab: #2d2d2d;
+  --vscode-border: #3c3c3c;
+  --vscode-text: #cccccc;
+  --vscode-active-text: #ffffff;
+}
+
+body {
+  margin: 0;
+  color: var(--vscode-text);
+  background-color: var(--vscode-bg);
+}
+
+.editor-textarea {
+  background-color: var(--vscode-bg);
+  color: var(--vscode-text);
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.editor-textarea:focus {
+  outline: none;
+  border-color: var(--vscode-border);
+}
+
+.file-explorer-item:hover {
+  background-color: #37373d;
+}
+
+.tab-active {
+  background-color: var(--vscode-active-tab);
+  color: var(--vscode-active-text);
+  border-bottom: 1px solid #0078d4;
+}
+
+.tab-inactive {
+  background-color: var(--vscode-inactive-tab);
+  border-right: 1px solid var(--vscode-border);
+}
+
+.tab-inactive:hover {
+  background-color: #303030;
+}
